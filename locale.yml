@@ -205,7 +205,7 @@ pl:
   notice_issue_not_closable_by_open_tasks: "To zagadnienie nie może zostać zamknięte, ponieważ ma przynajmniej jedno otwarte podzagadnienie."
   notice_issue_not_closable_by_blocking_issue: "To zagadnienie nie może zostać zamknięte, ponieważ jest blokowane przez przynajmniej jedno otwarte zagadnienie."
   notice_issue_not_reopenable_by_closed_parent_issue: "To zagadnienie nie może zostać ponownie otwarte, ponieważ zagadnienie nadrzędne jest zamknięte."
-  notice_invalid_watcher: "Invalid watcher: User will not receive any notifications because it does not have access to view this object."
+  notice_invalid_watcher: "Nieprawidłowy obserwator: Użytkownik nie otrzyma żadnych powiadomień, ponieważ nie posiada dostępu do tego obiektu."
 
   error_can_t_load_default_data: "Domyślna konfiguracja nie może być załadowana: %{value}"
   error_scm_not_found: Obiekt lub wersja nie zostały znalezione w repozytorium.
@@ -235,7 +235,7 @@ pl:
   error_invalid_file_encoding: "Plik nie stosuje kodowania %{encoding}"
   error_invalid_csv_file_or_settings: "Plik nie jest plikiem CSV lub nie pasuje do ustawień poniżej (%{value})"
   error_can_not_read_import_file: Wystąpił błąd podczas czytania pliku do importu
-  error_no_data_in_file: "The file does not contain any data"
+  error_no_data_in_file: "Ten plik nie zawiera żadnych danych"
   error_attachment_extension_not_allowed: "Rozszerzenie %{extension} nie jest dozwolone dla załączników"
   error_ldap_bind_credentials: Nieprawidłowe konto/hasło LDAP
   error_no_tracker_allowed_for_new_issue_in_project: Ten projekt nie zawiera żadnych typów zagadnień, dla których mógłbyś utworzyć zagadnienie
@@ -247,15 +247,15 @@ pl:
   error_can_not_delete_auth_source: Ten tryb uwierzytelniania jest w użyciu i nie może zostać usunięty.
   error_spent_on_future_date: Nie można zapisać czasu dla daty z przyszłości
   error_not_allowed_to_log_time_for_other_users: Nie jesteś upoważniony do zapisywania czasu dla innych użytkowników
-  error_can_not_execute_macro_html: "Error executing the <strong>%{name}</strong> macro (%{error})"
-  error_macro_does_not_accept_block: "This macro does not accept a block of text"
-  error_childpages_macro_no_argument: "With no argument, this macro can be called from wiki pages only"
+  error_can_not_execute_macro_html: "Wystąpił błąd podczas wykonywania makra <strong>%{name}</strong> (%{error})"
+  error_macro_does_not_accept_block: "To makro nie akceptuje bloku tekstu"
+  error_childpages_macro_no_argument: "Bez argumentu to makro może być wywołane tylko na stronach wiki"
   error_circular_inclusion: "Circular inclusion detected"
-  error_page_not_found: "Page not found"
-  error_filename_required: "Filename required"
+  error_page_not_found: "Podana strona nie istnieje"
+  error_filename_required: "Nazwa pliku jest wymagana"
   error_invalid_size_parameter: "Invalid size parameter"
-  error_attachment_not_found: "Attachment %{name} not found"
-  error_invalid_authenticity_token: "Invalid form authenticity token."
+  error_attachment_not_found: "Załącznik %{name} nie istnieje"
+  error_invalid_authenticity_token: "Nieprawidłowy token autentyczności formularza."
   error_query_statement_invalid: "An error occurred while executing the query and has been logged. Please report this error to your Redmine administrator."
 
   mail_subject_lost_password: "Twoje hasło do %{value}"
@@ -330,19 +330,19 @@ pl:
   field_mail_notification: Powiadomienia e-mail
   field_admin: Administrator
   field_last_login_on: Ostatnie połączenie
-  field_passwd_changed_on: Password last changed
+  field_passwd_changed_on: Ostatnia zmiana hasła
   field_language: Język
   field_effective_date: Data
   field_password: Hasło
   field_new_password: Nowe hasło
   field_password_confirmation: Potwierdzenie
-  field_twofa_scheme: Two-factor authentication scheme
+  field_twofa_scheme: Schemat uwierzytelniania dwuskładnikowego
   field_version: Wersja
   field_type: Typ
   field_host: Host
   field_port: Port
   field_account: Konto
-  field_base_dn: Base DN
+  field_base_dn: Bazowe DN
   field_attr_login: Login atrybut
   field_attr_firstname: Imię atrybut
   field_attr_lastname: Nazwisko atrybut
@@ -418,10 +418,10 @@ pl:
   field_recently_used_projects: 'Liczba ostatnich projektów widocznych polu "skocz do projektu"'
   field_history_default_tab: Domyślna zakładka historii zagadnienia
   field_unique_id: Unikalne ID
-  field_toolbar_language_options: Lista języków z podświetlaniem składni dsotępna w toolbarze
-  field_twofa_required: Require two factor authentication
-  field_default_issue_query: Default issue query
-  field_default_project_query: Default project query
+  field_toolbar_language_options: Lista języków z podświetlaniem składni dostępna w toolbarze
+  field_twofa_required: Wymagaj dwyskładnikowego uwierzytelnia
+  field_default_issue_query: Domyślna kwerenda dla listy zagadnień
+  field_default_project_query: Domyślna kwerenda dla listy projektów
 
   setting_app_title: Tytuł aplikacji
   setting_welcome_text: Tekst powitalny
@@ -504,8 +504,8 @@ pl:
   setting_force_default_language_for_loggedin: Wymuś domyślny język dla zalogowanych użytkowników
   setting_link_copied_issue: Powiązywanie zagadnień podczas kopiowania
   setting_max_additional_emails: Maksymalna liczba dodatkowych adresów e-mail
-  setting_email_domains_allowed: Allowed email domains
-  setting_email_domains_denied: Disallowed email domains
+  setting_email_domains_allowed: Dozwolone domeny adresów e-mail
+  setting_email_domains_denied: Niedozwolone domeny adresów e-mail
   setting_search_results_per_page: Limit wyników wyszukiwania na stronie
   setting_attachment_extensions_allowed: Dozwolone rozszerzenia
   setting_attachment_extensions_denied: Niedozwolone rozszerzenia
@@ -519,13 +519,13 @@ pl:
   setting_timelog_accept_future_dates: Akceptuj wpisy dla dat z przyszłości
   setting_show_status_changes_in_mail_subject: Pokaż zmianę statusu zagadnienia w tytule wiadomości e-mail
   setting_project_list_defaults: Domyślne kolumny wyświetlane na liście projektów
-  setting_twofa: Two-factor authentication
+  setting_twofa: Dwuskładnikowe uwierzytelnienie
 
   permission_add_project: Tworzenie projektu
   permission_add_subprojects: Tworzenie podprojektów
   permission_edit_project: Edycja projektów
   permission_close_project: Zamykanie/otwieranie projektów
-  permission_delete_project: Delete the project
+  permission_delete_project: Usuwanie projektów
   permission_select_project_modules: Wybieranie modułów projektu
   permission_manage_members: Zarządzanie uczestnikami
   permission_manage_project_activities: Zarządzanie aktywnościami projektu
@@ -572,9 +572,9 @@ pl:
   permission_view_wiki_edits: Podgląd historii wiki
   permission_edit_wiki_pages: Edycja stron wiki
   permission_delete_wiki_pages_attachments: Usuwanie załączników
-  permission_view_wiki_page_watchers: View wiki page watchers list
-  permission_add_wiki_page_watchers: Add wiki page watchers
-  permission_delete_wiki_page_watchers: Delete wiki page watchers
+  permission_view_wiki_page_watchers: Podgląd listy obserwatorów stron wiki
+  permission_add_wiki_page_watchers: Dodawanie obserwatorów stron wiki
+  permission_delete_wiki_page_watchers: Usuwanie obserwatorów stron wiki
   permission_protect_wiki_pages: Blokowanie stron wiki
   permission_manage_repository: Zarządzanie repozytorium
   permission_browse_repository: Przeglądanie repozytorium
@@ -907,7 +907,7 @@ pl:
   label_copied_from: skopiowane z
   label_stay_logged_in: Pozostań zalogowany
   label_disabled: wyłączone
-  label_optional: optional
+  label_optional: opcjonalne
   label_show_completed_versions: Pokaż kompletne wersje
   label_me: ja
   label_board: Forum
@@ -979,15 +979,15 @@ pl:
   label_incoming_emails: Przychodząca poczta elektroniczna
   label_generate_key: Wygeneruj klucz
   label_issue_watchers: Obserwatorzy
-  label_message_watchers: Watchers
-  label_wiki_page_watchers: Watchers
+  label_message_watchers: Obserwatorzy
+  label_wiki_page_watchers: Obserwatorzy
   label_example: Przykład
   label_display: Wygląd
   label_sort: Sortuj
   label_ascending: Rosnąco
   label_descending: Malejąco
   label_date_from_to: "Od %{start} do %{end}"
-  label_days_to_html: "%{days} days up to %{date}"
+  label_days_to_html: "%{days} dni do %{date}"
   label_wiki_content_added: Dodano stronę wiki
   label_wiki_content_updated: Uaktualniono stronę wiki
   label_group: Grupa
@@ -1010,7 +1010,7 @@ pl:
   label_missing_api_access_key: Brakuje klucza dostępu do API
   label_api_access_key_created_on: "Klucz dostępu do API został utworzony %{value} temu"
   label_profile: Profil
-  label_subtask: Subtask
+  label_subtask: Podzagadnienie
   label_subtask_plural: Podzagadnienia
   label_project_copy_notifications: Wyślij powiadomienia e-mail podczas kopiowania projektu
   label_import_notifications: Wyślij powiadomienia e-mail podczas importu
@@ -1035,7 +1035,7 @@ pl:
   label_fields_permissions: Uprawnienia do pól
   label_readonly: Tylko do odczytu
   label_required: Wymagane
-  label_required_lower: required
+  label_required_lower: wymagane
   label_hidden: Ukryte
   label_attribute_of_project: "%{name} projektu"
   label_attribute_of_issue: "%{name} zagadnienia"
@@ -1097,7 +1097,7 @@ pl:
   label_quote_char: Cytat
   label_double_quote_char: Podwójny cytat
   label_fields_mapping: Mapowanie pól
-  label_relations_mapping: Relations mapping
+  label_relations_mapping: Mapowanie relacji
   label_file_content_preview: Podgląd treści pliku
   label_create_missing_values: Utwórz brakujące wartości
   label_api: API
@@ -1115,9 +1115,9 @@ pl:
   label_optgroup_recents: Ostatnio używane
   label_last_notes: Ostatnie notatki
   label_default_queries:
-    for_all_projects: For all projects
-    for_current_project: For current project
-    for_all_users: For all users
+    for_all_projects: Dla wszystkich projektów
+    for_current_project: Dla obecnego projektu
+    for_all_users: Dla wszystkich użytkowników
   label_nothing_to_preview: Nie ma nic do podglądu
   label_inherited_from_parent_project: Dziedziczone z nadrzędnego projektu
   label_inherited_from_group: "Dziedziczone z grupy %{name}"
@@ -1137,7 +1137,7 @@ pl:
   label_display_type_board: Tablica
   label_my_bookmarks: Moje zakładki
   label_assign_to_me: Przypisz do mnie
-  label_default_query: Default query
+  label_default_query: Domyślna kwerenda
 
   button_login: Zaloguj się
   button_submit: Wyślij
@@ -1166,7 +1166,7 @@ pl:
   button_back: Wstecz
   button_cancel: Anuluj
   button_activate: Aktywuj
-  button_disable: Disable
+  button_disable: Dezaktywuj
   button_sort: Sortuj
   button_log_time: Dziennik
   button_rollback: Przywróć do tej wersji
@@ -1180,9 +1180,9 @@ pl:
   button_change_password: Zmień hasło
   button_copy: Kopia
   button_copy_and_follow: Kopiuj i przejdź
-  button_copy_link: Copy link
+  button_copy_link: Kopiuj link
   button_annotate: Adnotuj
-  button_fetch_changesets: Fetch commits
+  button_fetch_changesets: Pobierz zmiany
   button_update: Uaktualnij
   button_configure: Konfiguruj
   button_quote: Cytuj
@@ -1198,11 +1198,11 @@ pl:
   button_project_bookmark_delete: Usuń zakładkę
   button_filter: Filtruj
   button_actions: Akcje
-  button_add_subtask: Add subtask
-  button_save_object: "Save %{object_name}"
-  button_edit_object: "Edit %{object_name}"
-  button_delete_object: "Delete %{object_name}"
-  button_create_and_follow: Create and follow
+  button_add_subtask: Dodaj podzagadnienie
+  button_save_object: "Zapisz %{object_name}"
+  button_edit_object: "Edytuj %{object_name}"
+  button_delete_object: "Usuń %{object_name}"
+  button_create_and_follow: Utwórz i przejdź
 
   status_active: aktywny
   status_registered: zarejestrowany
@@ -1262,9 +1262,9 @@ pl:
   text_default_administrator_account_changed: Zmieniono domyślne hasło administratora
   text_file_repository_writable: Zapisywalny katalog plików
   text_plugin_assets_writable: Zapisywalny katalog zasobów wtyczek
-  text_all_migrations_have_been_run: All database migrations have been run
-  text_minimagick_available: MiniMagick dostępne (opcjonalnie)
-  text_convert_available: Konwersja przez ImageMagick dostępna (optional)
+  text_all_migrations_have_been_run: Wszystkie migracje bazy danych zostały wykonane
+  text_minimagick_available: MiniMagick dostępne (opcjonalne)
+  text_convert_available: Konwersja przez ImageMagick dostępna (opcjonalne)
   text_gs_available: Wsparcie dla PDF przez ImageMagick dostępne (opcjonalne)
   text_destroy_time_entries_question: "Przepracowano %{hours} godzin przy zagadnieniu, które chcesz usunąć. Co chcesz zrobić?"
   text_destroy_time_entries: Usuń wpisy dziennika
@@ -1354,7 +1354,7 @@ pl:
   text_project_is_public_non_member: Publiczne projekty i ich treść jest dostępna dla wszystkich zalogowanych użytkowników.
   text_project_is_public_anonymous: Publiczne projekty i ich treść jest publicznie dostępna w sieci.
   label_import_time_entries: Importuj wpisy dziennika
-  label_import_users: Import users
+  label_import_users: Importuj użytkowników
 
   twofa__totp__name: Authenticator app
   twofa__totp__text_pairing_info_html: 'Scan this QR code or enter the plain text key into a TOTP app (e.g. <a href="https://support.google.com/accounts/answer/1066447">Google Authenticator</a>, <a href="https://authy.com/download/">Authy</a>, <a href="https://guide.duo.com/third-party-accounts">Duo Mobile</a>) and enter the code in the field below to activate two-factor authentication.'
