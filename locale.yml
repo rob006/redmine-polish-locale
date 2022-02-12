@@ -1036,7 +1036,7 @@ pl:
   label_readonly: Tylko do odczytu
   label_required: Wymagane
   label_required_lower: wymagane
-  label_required_administrators: required for administrators
+  label_required_administrators: wymagane dla administratorów
   label_hidden: Ukryte
   label_attribute_of_project: "%{name} projektu"
   label_attribute_of_issue: "%{name} zagadnienia"
