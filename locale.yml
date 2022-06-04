@@ -282,9 +282,9 @@ pl:
   mail_body_security_notification_notify_disabled: "Adres e-mail %{value} nie otrzymuje już powiadomień."
   mail_body_settings_updated: "Poniższe ustawienia zostały zmienione:"
   mail_body_password_updated: Twoje hasło zostało zmienione.
-  mail_destroy_project_failed: Project %{value} could not be deleted.
-  mail_destroy_project_successful: Project %{value} was deleted successfully.
-  mail_destroy_project_with_subprojects_successful: Project %{value} and its subprojects were deleted successfully.
+  mail_destroy_project_failed: Nie udało się usunąć projektu %{value}.
+  mail_destroy_project_successful: Projekt %{value} został pomyślnie usunięty.
+  mail_destroy_project_with_subprojects_successful: Projekt %{value} oraz jego podprojekty zostały pomyślnie usunięte.
 
 
   field_name: Nazwa
@@ -324,7 +324,7 @@ pl:
   field_priority: Priorytet
   field_fixed_version: Wersja docelowa
   field_user: Użytkownik
-  field_principal: Przełożony
+  field_principal: Użytkownik lub grupa
   field_role: Rola
   field_homepage: Strona www
   field_is_public: Publiczny
@@ -1218,7 +1218,7 @@ pl:
   project_status_active: aktywny
   project_status_closed: zamknięty
   project_status_archived: zarchiwizowany
-  project_status_scheduled_for_deletion: scheduled for deletion
+  project_status_scheduled_for_deletion: zaplanowane usunięcie
 
   version_status_open: otwarta
   version_status_locked: zablokowana
@@ -1229,17 +1229,17 @@ pl:
   text_select_mail_notifications: Wybierz akcje, dla których powinno być wysłane powiadomienie e-mail.
   text_regexp_info: "np. ^[A-Z0-9]+$"
   text_project_destroy_confirmation: Czy jesteś pewien, że chcesz usunąć ten projekt i wszystkie powiązane dane?
-  text_projects_bulk_destroy_confirmation: Are you sure you want to delete the selected projects and related data?
+  text_projects_bulk_destroy_confirmation: Czy jesteś pewien, że chcesz usunąć wybrane projekty i wszystkie powiązane dane?
   text_projects_bulk_destroy_head: |
-    You are about to permanently delete the following projects, including possible subprojects and any related data.
-    Please review the information below and confirm that this is indeed what you want to do.
-    This action cannot be undone.
-  text_projects_bulk_destroy_confirm: To confirm, please enter "%{yes}" in the box below.
-  text_subprojects_destroy_warning: "Podprojekty %{value} zostaną także usunięte."
-  text_subprojects_bulk_destroy: "including its subproject(s): %{value}"
-  text_project_close_confirmation: Are you sure you want to close the '%{value}' project to make it read-only?
-  text_project_reopen_confirmation: Are you sure you want to reopen the '%{value}' project?
-  text_project_archive_confirmation: Are you sure you want to archive the '%{value}' project?
+    Zamierzasz usunąć następujące projekty, włącznie z podprojektami i wszystkimi powiązanymi danymi.
+    Sprawdź poniższe informacje i potwierdź, że rzeczywiście chcesz to zrobić.
+    Ta operacja jest nieodwracalna.
+  text_projects_bulk_destroy_confirm: Aby potwierdzić, wpisz "%{yes}" w okienku poniżej.
+  text_subprojects_destroy_warning: "Podprojekty %{value} zostaną również usunięte."
+  text_subprojects_bulk_destroy: "włącznie z podprojektami: %{value}"
+  text_project_close_confirmation: Czy jesteś pewien, że chcesz oznaczyć projekt "%{value}" jako tylko do odczytu?
+  text_project_reopen_confirmation: Czy jesteś pewien, że chcesz ponownie otworzyć projekt "%{value}"?
+  text_project_archive_confirmation: Czy jesteś pewien, że chcesz zarchiwizować projekt "%{value}"?
   text_workflow_edit: Zaznacz rolę i typ zagadnienia do edycji przepływu pracy
   text_are_you_sure: Jesteś pewien?
   text_journal_changed: "Zmieniono %{label} z %{old} na %{new}"
