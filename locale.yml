@@ -148,6 +148,7 @@ pl:
         must_contain_lowercase: "musi zawierać małe litery (a-z)"
         must_contain_digits: "musi zawierać cyfry (0-9)"
         must_contain_special_chars: "musi zawierać znaki specjalne (!, $, %, ...)"
+        domain_not_allowed: "zawiera niedozwoloną domenę (%{domain})"
 
   actionview_instancetag_blank_option: wybierz
 
@@ -338,6 +339,7 @@ pl:
   field_language: Język
   field_effective_date: Data
   field_password: Hasło
+  field_current_password: Obecne hasło
   field_new_password: Nowe hasło
   field_password_confirmation: Potwierdzenie
   field_twofa_scheme: Schemat uwierzytelniania dwuskładnikowego
@@ -1145,6 +1147,8 @@ pl:
   label_my_bookmarks: Moje zakładki
   label_assign_to_me: Przypisz do mnie
   label_default_query: Domyślna kwerenda
+  label_edited: Edytowano
+  label_time_by_author: "%{time} przez %{author}"
 
   button_login: Zaloguj się
   button_submit: Wyślij
@@ -1373,6 +1377,7 @@ pl:
   text_project_is_public_anonymous: Publiczne projekty i ich treść jest publicznie dostępna w sieci.
   label_import_time_entries: Importuj wpisy dziennika
   label_import_users: Importuj użytkowników
+  sudo_mode_new_info_html: <strong>Co się dzieje?</strong> Musisz potwierdzić swoje hasło zanim będziesz mógł wykonywać działania administracyjne. Pozwala to lepiej chronić twoje konto.
 
   twofa__totp__name: Authenticator app
   twofa__totp__text_pairing_info_html: 'Scan this QR code or enter the plain text key into a TOTP app (e.g. <a href="https://support.google.com/accounts/answer/1066447">Google Authenticator</a>, <a href="https://authy.com/download/">Authy</a>, <a href="https://guide.duo.com/third-party-accounts">Duo Mobile</a>) and enter the code in the field below to activate two-factor authentication.'
