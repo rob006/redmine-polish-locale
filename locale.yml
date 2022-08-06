@@ -136,6 +136,7 @@ en:
         must_contain_lowercase: "must contain lowercase letters (a-z)"
         must_contain_digits: "must contain digits (0-9)"
         must_contain_special_chars: "must contain special characters (!, $, %, ...)"
+        domain_not_allowed: "contains a domain not allowed (%{domain})"
 
   actionview_instancetag_blank_option: Please select
 
@@ -326,6 +327,7 @@ en:
   field_language: Language
   field_effective_date: Due date
   field_password: Password
+  field_current_password: Current password
   field_new_password: New password
   field_password_confirmation: Confirmation
   field_twofa_scheme: Two-factor authentication scheme
@@ -1128,6 +1130,8 @@ en:
   label_my_bookmarks: My bookmarks
   label_assign_to_me: Assign to me
   label_default_query: Default query
+  label_edited: Edited
+  label_time_by_author: "%{time} by %{author}"
 
   button_login: Login
   button_submit: Submit
@@ -1356,6 +1360,7 @@ en:
   text_project_is_public_anonymous: Public projects and their contents are openly available on the network.
   label_import_time_entries: Import time entries
   label_import_users: Import users
+  sudo_mode_new_info_html: <strong>What's happening?</strong> You need to reconfirm your password before taking any administrative actions, this ensures your account stays protected.
 
   twofa__totp__name: Authenticator app
   twofa__totp__text_pairing_info_html: 'Scan this QR code or enter the plain text key into a TOTP app (e.g. <a href="https://support.google.com/accounts/answer/1066447">Google Authenticator</a>, <a href="https://authy.com/download/">Authy</a>, <a href="https://guide.duo.com/third-party-accounts">Duo Mobile</a>) and enter the code in the field below to activate two-factor authentication.'
