@@ -1404,7 +1404,7 @@ pl:
   twofa_label_enter_otp: Podaj swój kod uwierzytelniania dwuskładnikowego.
   twofa_too_many_tries: Zbyt wiele prób.
   twofa_resend_code: Wyślij ponownie kod
-  twofa_code_sent: Kod uwierzytelniający został do ciebie wysłany.
+  twofa_code_sent: Kod uwierzytelniający został do Ciebie wysłany.
   twofa_generate_backup_codes: Wygeneruj kody zapasowe
   twofa_text_generate_backup_codes_confirmation: Spowoduje to unieważnienie wszystkich istniejących kodów zapasowych i wygenerowanie nowych. Czy jesteś pewien, że chcesz kontynuować?
   twofa_notice_backup_codes_generated: Twoje kody zapasowe zostały wygenerowane.
