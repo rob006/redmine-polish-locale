@@ -257,7 +257,7 @@ pl:
   error_invalid_size_parameter: "Invalid size parameter"
   error_attachment_not_found: "Załącznik %{name} nie istnieje"
   error_invalid_authenticity_token: "Nieprawidłowy token autentyczności formularza."
-  error_query_statement_invalid: "An error occurred while executing the query and has been logged. Please report this error to your Redmine administrator."
+  error_query_statement_invalid: "Wystąpił błąd podczas wykonywania tej kwerendy i został on zapisany w dzienniku. Poinformuj o tym błędzie administratora Redmine."
 
   mail_subject_lost_password: "Twoje hasło do %{value}"
   mail_body_lost_password: "W celu zmiany swojego hasła użyj poniższego odnośnika:"
@@ -342,7 +342,7 @@ pl:
   field_current_password: Obecne hasło
   field_new_password: Nowe hasło
   field_password_confirmation: Potwierdzenie
-  field_twofa_scheme: Schemat uwierzytelniania dwuskładnikowego
+  field_twofa_scheme: Rodzaj uwierzytelniania dwuskładnikowego
   field_version: Wersja
   field_type: Typ
   field_host: Host
@@ -525,7 +525,7 @@ pl:
   setting_timelog_accept_future_dates: Akceptuj wpisy dla dat z przyszłości
   setting_show_status_changes_in_mail_subject: Pokaż zmianę statusu zagadnienia w tytule wiadomości e-mail
   setting_project_list_defaults: Domyślne kolumny wyświetlane na liście projektów
-  setting_twofa: Dwuskładnikowe uwierzytelnienie
+  setting_twofa: Uwierzytelnianie dwuskładnikowe
 
   permission_add_project: Tworzenie projektu
   permission_add_subprojects: Tworzenie podprojektów
@@ -1327,7 +1327,7 @@ pl:
   text_avatar_server_config_html: 'Obecna usługa awatarów to <a href="%{url}">%{url}</a>. Możesz zmienić ją w config/configuration.yml.'
   text_no_subject: brak tematu
   text_allowed_queries_to_select: Można wybrać jedynie publiczne (dostępne dla każdego użytkownika) kwerendy
-  text_setting_config_change: You can configure the behaviour in config/configuration.yml. Please restart the application after editing it.
+  text_setting_config_change: Możesz skonfigurować to zachowanie w pliku config/configuration.yml. Zrestartuj aplikację po dokonaniu zmian.
 
   default_role_manager: Kierownik
   default_role_developer: Programista
@@ -1379,41 +1379,42 @@ pl:
   label_import_users: Importuj użytkowników
   sudo_mode_new_info_html: <strong>Co się dzieje?</strong> Musisz potwierdzić swoje hasło zanim będziesz mógł wykonywać działania administracyjne. Pozwala to lepiej chronić twoje konto.
 
-  twofa__totp__name: Authenticator app
-  twofa__totp__text_pairing_info_html: 'Scan this QR code or enter the plain text key into a TOTP app (e.g. <a href="https://support.google.com/accounts/answer/1066447">Google Authenticator</a>, <a href="https://authy.com/download/">Authy</a>, <a href="https://guide.duo.com/third-party-accounts">Duo Mobile</a>) and enter the code in the field below to activate two-factor authentication.'
-  twofa__totp__label_plain_text_key: Plain text key
-  twofa__totp__label_activate: 'Enable authenticator app'
-  twofa_currently_active: "Currently active: %{twofa_scheme_name}"
-  twofa_not_active: "Not activated"
-  twofa_label_code: Code
-  twofa_hint_disabled_html: Setting <strong>%{label}</strong> will deactivate and unpair two-factor authentication devices for all users.
-  twofa_hint_optional_html: Setting <strong>%{label}</strong> will let users set up two-factor authentication at will, unless it is required by one of their groups.
-  twofa_hint_required_html: Setting <strong>%{label}</strong> will require all users to set up two-factor authentication at their next login.
-  twofa_hint_required_administrators_html: Setting <strong>%{label}</strong> behaves like optional, but will require all users with administration rights to set up two-factor authentication at their next login.
-  twofa_label_setup: Enable two-factor authentication
-  twofa_label_deactivation_confirmation: Disable two-factor authentication
-  twofa_notice_select: "Please select the two-factor scheme you would like to use:"
-  twofa_warning_require: The administrator requires you to enable two-factor authentication.
-  twofa_activated: Two-factor authentication successfully enabled. It is recommended to <a data-method="post" href="%{bc_path}">generate backup codes</a> for your account.
-  twofa_deactivated: Two-factor authentication disabled.
-  twofa_mail_body_security_notification_paired: "Two-factor authentication successfully enabled using %{field}."
-  twofa_mail_body_security_notification_unpaired: "Two-factor authentication disabled for your account."
-  twofa_mail_body_backup_codes_generated: "New two-factor authentication backup codes generated."
-  twofa_mail_body_backup_code_used: "A two-factor authentication backup code has been used."
-  twofa_invalid_code: Code is invalid or outdated.
-  twofa_label_enter_otp: Please enter your two-factor authentication code.
-  twofa_too_many_tries: Too many tries.
-  twofa_resend_code: Resend code
-  twofa_code_sent: An authentication code has been sent to you.
-  twofa_generate_backup_codes: Generate backup codes
-  twofa_text_generate_backup_codes_confirmation: This will invalidate all existing backup codes and generate new ones. Would you like to continue?
-  twofa_notice_backup_codes_generated: Your backup codes have been generated.
-  twofa_warning_backup_codes_generated_invalidated: New backup codes have been generated. Your existing codes from %{time} are now invalid.
-  twofa_label_backup_codes: Two-factor authentication backup codes
-  twofa_text_backup_codes_hint: Use these codes instead of a one-time password should you not have access to your second factor. Each code can only be used once. It is recommended to print and store them in a safe place.
-  twofa_text_backup_codes_created_at: Backup codes generated %{datetime}.
-  twofa_backup_codes_already_shown: Backup codes cannot be shown again, please <a data-method="post" href="%{bc_path}">generate new backup codes</a> if required.
-  twofa_text_group_required: "This setting is only effective when the global two factor authentication setting is set to 'optional'. Currently, two factor authentication is required for all users."
-  twofa_text_group_disabled: "This setting is only effective when the global two factor authentication setting is set to 'optional'. Currently, two factor authentication is disabled."
+  twofa__totp__name: Aplikacja uwierzytelniająca
+  twofa__totp__text_pairing_info_html: 'Zeskanuj ten kod QR lub wpisz klucz do aplikacji TOTP (np. <a href="https://support.google.com/accounts/answer/1066447">Google Authenticator</a>, <a href="https://authy.com/download/">Authy</a>, <a href="https://guide.duo.com/third-party-accounts">Duo Mobile</a>) i wpisz kod do pola poniżej by aktywować uwierzytelnianie dwuskładnikowe.'
+  twofa__totp__label_plain_text_key: Klucz
+  twofa__totp__label_activate: 'Włącz aplikację uwierzytelniającą'
+  twofa_currently_active: "Aktualnie aktywne: %{twofa_scheme_name}"
+  twofa_not_active: "Nieaktywne"
+  twofa_label_code: Kod
+  twofa_hint_disabled_html: Ustawienie <strong>%{label}</strong> wyłączy i usunie sparowane urządzenia do uwierzytelniania dwuskładnikowego dla wszystkich użytkowników.
+  twofa_hint_optional_html: Ustawienie <strong>%{label}</strong> umożliwi użytkownikom opcjonalne skonfigurowanie uwierzytelniania dwuskładnikowego, chyba że będzie to wymagane przez jedną z ich grup.
+  twofa_hint_required_html: Ustawienie <strong>%{label}</strong> wymusi wszystkim użytkownikom skonfigurowanie uwierzytelniania dwuskładnikowego przy kolejnym logowaniu.
+  twofa_hint_required_administrators_html: Ustawienie <strong>%{label}</strong> działa jak opcjonalne, ale będzie wymagać od wszystkich użytkowników z uprawnieniami administratora skonfigurowania uwierzytelniania dwuskładnikowego przy kolejnym logowaniu.
+  twofa_label_setup: Włącz uwierzytelnianie dwuskładnikowe
+  twofa_label_deactivation_confirmation: Wyłącz uwierzytelnianie dwuskładnikowe
+  twofa_notice_select: "Wybierz rodzaj uwierzytelniania dwuskładnikowego, który chciałbyś użyć:"
+  twofa_warning_require: Administrator wymaga byś aktywował uwierzytelnianie dwuskładnikowe.
+  twofa_activated: Uwierzytelnianie dwuskładnikowe zostało z powodzeniem włączone. Zalecane jest <a data-method="post" href="%{bc_path}">wygenerowanie kodów zapasowych</a> dla twego konta.
+  twofa_deactivated: Uwierzytelnianie dwuskładnikowe wyłączone.
+  twofa_mail_body_security_notification_paired: "Uwierzytelnianie dwuskładnikowe z powodzeniem włączone używając %{field}."
+  twofa_mail_body_security_notification_unpaired: "Uwierzytelnianie dwuskładnikowe zostało wyłączone dla twojego konta."
+  twofa_mail_body_backup_codes_generated: "Nowe kody zapasowe uwierzytelniania dwuskładnikowego zostały wygenerowane."
+  twofa_mail_body_backup_code_used: "Użyto zapasowego kodu uwierzytelniania dwuskładnikowego."
+  twofa_invalid_code: Kod jest błędny lub nieaktualny.
+  twofa_label_enter_otp: Podaj swój kod uwierzytelniania dwuskładnikowego.
+  twofa_too_many_tries: Zbyt wiele prób.
+  twofa_resend_code: Wyślij ponownie kod
+  twofa_code_sent: Kod uwierzytelniający został do Ciebie wysłany.
+  twofa_generate_backup_codes: Wygeneruj kody zapasowe
+  twofa_text_generate_backup_codes_confirmation: Spowoduje to unieważnienie wszystkich istniejących kodów zapasowych i wygenerowanie nowych. Czy jesteś pewien, że chcesz kontynuować?
+  twofa_notice_backup_codes_generated: Twoje kody zapasowe zostały wygenerowane.
+  twofa_warning_backup_codes_generated_invalidated: Nowe kody zapasowe zostały wygenerowane. Twoje dotychczasowe kody z %{time} są już nieważne.
+  twofa_label_backup_codes: Kody zapasowe uwierzytelniania dwuskładnikowego
+  twofa_text_backup_codes_hint: Użyj tych kodów zamiast hasła jednorazowego, jeżeli nie masz dostępu do drugiego składnika uwierzytelniania. Każdy kod może być użyty tylko raz. Zalecamy je wydrukować i przechowywać w bezpiecznym miejscu.
+  twofa_text_backup_codes_created_at: Kody zapasowe wygenerowano %{datetime}.
+  twofa_backup_codes_already_shown: Kody zapasowe nie mogą być ponownie wyświetlone, <a data-method="post" href="%{bc_path}">wygeneruj nowe kody</a> jeśli są potrzebne.
+  twofa_text_group_required: "To ustawienie działa tylko wtedy, kiedy globalne ustawienie uwierzytelniania dwuskładnikowego jest ustawione na 'opcjonalne'. Aktualnie uwierzytelnianie dwuskładnikowe jest wymagane dla wszystkich użytkowników."
+  twofa_text_group_disabled: "To ustawienie działa tylko wtedy, kiedy globalne ustawienie uwierzytelniania dwuskładnikowego jest ustawione na 'opcjonalne'. Aktualnie uwierzytelnienie dwuskładnikowe jest wyłączone."
+
   text_user_destroy_confirmation: "Czy jesteś pewien, że chcesz usunąć tego użytkownika i wszystkie odwołania do niego? Tej operacji nie można cofnąć. Zwykle zablokowanie użytkownika jest lepszym rozwiązaniem, niż jego całkowite usunięcie. Aby potwierdzić operację, podaj jego login (%{login}) poniżej."
   text_project_destroy_enter_identifier: "Aby potwierdzić, podaj identyfikator projektu (%{identifier}) poniżej."
