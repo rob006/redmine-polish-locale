@@ -425,7 +425,7 @@ pl:
   field_history_default_tab: Domyślna zakładka historii zagadnienia
   field_unique_id: Unikalne ID
   field_toolbar_language_options: Lista języków z podświetlaniem składni dostępna w toolbarze
-  field_twofa_required: Wymagaj dwyskładnikowego uwierzytelnia
+  field_twofa_required: Wymagaj dwuskładnikowego uwierzytelnia
   field_default_issue_query: Domyślna kwerenda dla listy zagadnień
   field_default_project_query: Domyślna kwerenda dla listy projektów
   field_default_time_entry_activity: Default spent time activity
