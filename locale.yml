@@ -314,6 +314,7 @@ pl:
   field_title: Tytuł
   field_project: Projekt
   field_issue: Zagadnienie
+  field_is_member_of_group: Członek grupy
   field_status: Status
   field_notes: Notatki
   field_is_closed: Zagadnienie zamknięte
@@ -1246,6 +1247,8 @@ pl:
   text_project_close_confirmation: Czy jesteś pewien, że chcesz oznaczyć projekt "%{value}" jako tylko do odczytu?
   text_project_reopen_confirmation: Czy jesteś pewien, że chcesz ponownie otworzyć projekt "%{value}"?
   text_project_archive_confirmation: Czy jesteś pewien, że chcesz zarchiwizować projekt "%{value}"?
+  text_users_bulk_destroy_head: 'Zamierzasz usunąć następujących użytkowników i wszystkie odwołania do nich. Tej operacji nie można cofnąć. Zwykle zablokowanie użytkowników jest lepszym rozwiązaniem, niż ich całkowite usunięcie.'
+  text_users_bulk_destroy_confirm: 'Aby potwierdzić, wpisz "%{yes}" w pole poniżej.'
   text_workflow_edit: Zaznacz rolę i typ zagadnienia do edycji przepływu pracy
   text_are_you_sure: Jesteś pewien?
   text_journal_changed: "Zmieniono %{label} z %{old} na %{new}"
