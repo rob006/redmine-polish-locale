@@ -533,7 +533,7 @@ pl:
   permission_edit_project: Edycja projektów
   permission_close_project: Zamykanie/otwieranie projektów
   permission_delete_project: Usuwanie projektów
-  permission_select_project_publicity: Set project public or private
+  permission_select_project_publicity: Ustawianie projektu jako prywatny/publiczny
   permission_select_project_modules: Wybieranie modułów projektu
   permission_manage_members: Zarządzanie uczestnikami
   permission_manage_project_activities: Zarządzanie aktywnościami projektu
@@ -978,7 +978,7 @@ pl:
   label_optional_description: Opcjonalny opis
   label_add_another_file: Dodaj kolejny plik
   label_auto_watch_on: Automatyczne obserwowanie
-  label_auto_watch_on_issue_created: Issues I created
+  label_auto_watch_on_issue_created: Zagadnienia, które utworzyłem
   label_auto_watch_on_issue_contributed_to: Zagadnienia, w których brałem udział
   label_preferences: Preferencje
   label_chronological_order: W kolejności chronologicznej
@@ -1001,7 +1001,7 @@ pl:
   label_group_plural: Grupy
   label_group_new: Nowa grupa
   label_group_anonymous: Anonimowi użytkownicy
-  label_group_non_member: Użytkownicy nie będący uczestnikami
+  label_group_non_member: Użytkownicy niebędący uczestnikami
   label_time_entry_plural: Przepracowany czas
   label_version_sharing_none: Brak współdzielenia
   label_version_sharing_descendants: Z podprojektami
@@ -1026,7 +1026,7 @@ pl:
   label_additional_workflow_transitions_for_author: Dodatkowe przejścia stanów dozwolone, gdy użytkownik jest autorem zagadnienia
   label_additional_workflow_transitions_for_assignee: Dodatkowe przejścia stanów dozwolone, gdy użytkownik jest przypisany do zagadnienia
   label_issues_visibility_all: Wszystkie
-  label_issues_visibility_public: Wszystkie nie prywatne
+  label_issues_visibility_public: Wszystkie nieprywatne
   label_issues_visibility_own: Utworzone lub przypisane do użytkownika
   label_git_report_last_commit: Wyświetlaj ostatni commit dla plików i katalogów
   label_parent_revision: Rodzic
