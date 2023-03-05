@@ -1417,6 +1417,5 @@ pl:
   twofa_backup_codes_already_shown: Kody zapasowe nie mogą być ponownie wyświetlone, <a data-method="post" href="%{bc_path}">wygeneruj nowe kody</a> jeśli są potrzebne.
   twofa_text_group_required: "To ustawienie działa tylko wtedy, kiedy globalne ustawienie uwierzytelniania dwuskładnikowego jest ustawione na 'opcjonalne'. Aktualnie uwierzytelnianie dwuskładnikowe jest wymagane dla wszystkich użytkowników."
   twofa_text_group_disabled: "To ustawienie działa tylko wtedy, kiedy globalne ustawienie uwierzytelniania dwuskładnikowego jest ustawione na 'opcjonalne'. Aktualnie uwierzytelnienie dwuskładnikowe jest wyłączone."
-
   text_user_destroy_confirmation: "Czy jesteś pewien, że chcesz usunąć tego użytkownika i wszystkie odwołania do niego? Tej operacji nie można cofnąć. Zwykle zablokowanie użytkownika jest lepszym rozwiązaniem, niż jego całkowite usunięcie. Aby potwierdzić operację, podaj jego login (%{login}) poniżej."
   text_project_destroy_enter_identifier: "Aby potwierdzić, podaj identyfikator projektu (%{identifier}) poniżej."
