@@ -157,7 +157,6 @@ en:
   notice_account_password_updated: Password was successfully updated.
   notice_account_wrong_password: Wrong password
   notice_account_register_done: Account was successfully created. An email containing the instructions to activate your account was sent to %{email}.
-  notice_account_unknown_email: Unknown user.
   notice_account_not_activated_yet: You haven't activated your account yet. If you want to receive a new activation email, please <a href="%{url}">click this link</a>.
   notice_account_locked: Your account is locked.
   notice_can_t_change_password: This account uses an external authentication source. Impossible to change the password.
@@ -522,6 +521,7 @@ en:
   permission_edit_project: Edit project
   permission_close_project: Close / reopen the project
   permission_delete_project: Delete the project
+  permission_select_project_publicity: Set project public or private
   permission_select_project_modules: Select project modules
   permission_manage_members: Manage members
   permission_manage_project_activities: Manage project activities
@@ -839,10 +839,6 @@ en:
   label_view_all_revisions: View all revisions
   label_x_revisions: "%{count} revisions"
   label_max_size: Maximum size
-  label_sort_highest: Move to top
-  label_sort_higher: Move up
-  label_sort_lower: Move down
-  label_sort_lowest: Move to bottom
   label_roadmap: Roadmap
   label_roadmap_due_in: "Due in %{value}"
   label_roadmap_overdue: "%{value} late"
@@ -965,6 +961,7 @@ en:
   label_optional_description: Optional description
   label_add_another_file: Add another file
   label_auto_watch_on: Auto watch
+  label_auto_watch_on_issue_created: Issues I created
   label_auto_watch_on_issue_contributed_to: Issues I contributed to
   label_preferences: Preferences
   label_chronological_order: In chronological order
