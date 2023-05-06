@@ -429,7 +429,7 @@ pl:
   field_default_issue_query: Domyślna kwerenda dla listy zagadnień
   field_default_project_query: Domyślna kwerenda dla listy projektów
   field_default_time_entry_activity: Domyślna aktywność dla wpisów dziennika
-  field_any_searchable: Any searchable text
+  field_any_searchable: Dowolny przeszukiwalny tekst
 
   setting_app_title: Tytuł aplikacji
   setting_welcome_text: Tekst powitalny
@@ -769,7 +769,7 @@ pl:
   label_current_status: Obecny status
   label_new_statuses_allowed: Dozwolone nowe statusy
   label_all: wszystko
-  label_any: wszystko
+  label_any: dowolne
   label_none: brak
   label_nobody: nikt
   label_next: Następne
@@ -826,7 +826,7 @@ pl:
   label_more_than_ago: więcej niż dni temu
   label_ago: dni temu
   label_contains: zawiera
-  label_contains_any_of: contains any of
+  label_contains_any_of: zawiera dowolne z
   label_not_contains: nie zawiera
   label_starts_with: rozpoczyna się od
   label_ends_with: kończy się na
@@ -855,7 +855,7 @@ pl:
   label_latest_revision_plural: Najnowsze rewizje
   label_view_revisions: Pokaż rewizje
   label_view_all_revisions: Pokaż wszystkie rewizje
-  label_view_previous_annotation: View annotation prior to this change
+  label_view_previous_annotation: Pokaż adnotacje dla wersji przed tą zmianą
   label_x_revisions: "%{count} rewizji"
   label_max_size: Maksymalny rozmiar
   label_roadmap: Mapa
@@ -1216,7 +1216,7 @@ pl:
   button_edit_object: "Edytuj %{object_name}"
   button_delete_object: "Usuń %{object_name}"
   button_create_and_follow: Utwórz i przejdź
-  button_apply_issues_filter: Apply issues filter
+  button_apply_issues_filter: Zastosuj filtr na liście zagadnień
 
   status_active: aktywny
   status_registered: zarejestrowany
