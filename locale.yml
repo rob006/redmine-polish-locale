@@ -322,7 +322,7 @@ en:
   field_login: Login
   field_mail_notification: Email notifications
   field_admin: Administrator
-  field_last_login_on: Last connection
+  field_last_login_on: Last sign in
   field_passwd_changed_on: Password last changed
   field_language: Language
   field_effective_date: Due date
@@ -417,6 +417,7 @@ en:
   field_default_issue_query: Default issue query
   field_default_project_query: Default project query
   field_default_time_entry_activity: Default spent time activity
+  field_any_searchable: Any searchable text
 
   setting_app_title: Application title
   setting_welcome_text: Welcome text
@@ -674,7 +675,6 @@ en:
   label_assigned_issues: Assigned issues
   label_assigned_to_me_issues: Issues assigned to me
   label_updated_issues: Updated issues
-  label_last_login: Last connection
   label_registered_on: Registered on
   label_activity: Activity
   label_user_activity: "%{value}'s activity"
@@ -809,6 +809,7 @@ en:
   label_more_than_ago: more than days ago
   label_ago: days ago
   label_contains: contains
+  label_contains_any_of: contains any of
   label_not_contains: doesn't contain
   label_starts_with: starts with
   label_ends_with: ends with
@@ -837,6 +838,7 @@ en:
   label_latest_revision_plural: Latest revisions
   label_view_revisions: View revisions
   label_view_all_revisions: View all revisions
+  label_view_previous_annotation: View annotation prior to this change
   label_x_revisions: "%{count} revisions"
   label_max_size: Maximum size
   label_roadmap: Roadmap
@@ -1116,7 +1118,7 @@ en:
   label_trackers_description: Trackers description
   label_open_trackers_description: View all trackers description
   label_preferred_body_part_text: Text
-  label_preferred_body_part_html: HTML (experimental)
+  label_preferred_body_part_html: HTML
   label_issue_history_properties: Property changes
   label_issue_history_notes: Notes
   label_last_tab_visited: Last visited tab
@@ -1197,6 +1199,7 @@ en:
   button_edit_object: "Edit %{object_name}"
   button_delete_object: "Delete %{object_name}"
   button_create_and_follow: Create and follow
+  button_apply_issues_filter: Apply issues filter
 
   status_active: active
   status_registered: registered
